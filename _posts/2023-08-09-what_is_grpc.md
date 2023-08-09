@@ -1,21 +1,21 @@
-# What is gRPC and Why you should care
+# What is gRPC and why you should care
 
 gRPC (gRPC Remote Procedure Calls) is an open-source framework developed by Google that allows different applications to communicate with each other. It's a bit like a more advanced form of making a phone call between different parts of a computer program, or between different computers altogether. Here's how it works:
 
 1. **Protocols and Communication**: gRPC uses HTTP/2 for transport, which means it's designed to be more efficient and can send multiple pieces of information at the same time. It's like having several lines of communication open at once instead of just one.
     1. **HTTP/2** is important because it reduces the travels that the client and server need to communicate with each other or back-and-forth communication between the client and server, making the whole process more efficient. In this image, http2 vs http1 a simple comparison can be found.
 
-![grpc landing](/static/grpc/http2vs1.png)
+![grpc landing](https://assets.website-files.com/5ff66329429d880392f6cba2/6149cbd7fd4bdd7c82f55cc6_http1%20vs%20http2.png)
 
 1. **Defining Methods**: With gRPC, you define methods that can be called remotely in a special language called Protocol Buffers. Think of this like defining the "rules" of the conversation. Both sides need to understand these rules to talk to each other.
 
-![grpc landing](/static/grpc/protocol-buffers.png)
+![grpc landing](https://codeclimate.com/wp-content/uploads/2019/08/pb_json-45e02904.png)
 
 1. **Strongly Typed Interface**: related to the above, gRPC requires both the client and server to agree on the data structure beforehand. This ensures that both sides know exactly what kind of information is being sent and received. It's like both parties agreeing on the same language.
 2. **Request and Response**: The client sends a request to the server and waits for a response. This can be a simple one-to-one request and response, or more complex patterns like streaming, where multiple requests and responses are sent back and forth continuously.
 3. **Language Agnostic**: gRPC can be used with various programming languages, meaning that a program written in Python could communicate with a program written in Java without any issue.
     
-    ![grpc landing](/static/grpc/landing-2.svg)
+    ![grpc landing](https://grpc.io/img/landing-2.svg)
     
 4. **Deadlines/Timeouts**: gRPC allows setting deadlines or timeouts, which can be useful to ensure that a request doesn't take too long to get a response.
 5. **Secure Communication**: It offers options for secure communication, making sure that the information exchanged between the two parties is private and safe.
@@ -226,13 +226,13 @@ in 2 different terminals, run the python files.
 python server.py
 ```
 
-![grpc landing](/static/grpc/serverpy.png)
+Then in another termial run:
 
 ```bash
 python client.py
 ```
 
-![grpc landing](/static/grpc/clientpy.png)
+You will get: `Hello, World!` As expected and defined in our code :)
 
 What we essentially just did, was simulate communcation between a server and a client. 
 
