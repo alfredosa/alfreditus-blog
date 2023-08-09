@@ -255,6 +255,8 @@ In a few short steps, we were able to implement a reliable, replicable interacti
     - Then, in another terminal, you run the client code (e.g., **`python client.py`**). It connects to the server, makes the request, and receives the response.
     - You observe the interaction between the client and server, including the data sent and received.
     
-    ## Conclusion:
-    
-    gRPC is a modern, high-performance RPC framework that uses HTTP/2 for efficient communication. It allows for strongly-typed, language-agnostic communication between services, facilitating the development of scalable and maintainable systems. By defining clear contracts through Protocol Buffers, gRPC ensures consistent interfaces, streamlines development, and enhances collaboration. Its support for bi-directional streaming and multiplexing makes it a robust choice for contemporary distributed systems. Adopting gRPC can lead to more efficient and reliable inter-service communication, making it a valuable tool for developers and businesses alike.
+## Conclusion:
+
+gRPC is a modern, high-performance RPC framework that uses HTTP/2 for efficient communication. It allows for strongly-typed, language-agnostic communication between services, facilitating the development of scalable and maintainable systems. 
+
+By defining clear contracts through Protocol Buffers, gRPC ensures consistent interfaces, streamlines development, and enhances collaboration. Its support for bi-directional streaming and multiplexing makes it a robust choice for contemporary distributed systems. Adopting gRPC can lead to more efficient and reliable inter-service communication, making it a valuable tool for developers and businesses alike.
